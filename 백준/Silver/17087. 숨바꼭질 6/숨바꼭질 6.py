@@ -7,11 +7,8 @@ from functools import reduce
 n, s = map(int, input().split())
 bros = list(map(int, input().split()))
 bros.append(s)
-if n == 1:
-    print(abs(bros[0]-s))
-else:
-    arr = []
-    for i in range(n):
-        arr.append(abs(bros[i+1]-bros[i]))
+arr = []
+for i in range(n):
+    arr.append(bros[i+1]-bros[i])
 
-    print(reduce(gcd, arr))
+print(abs(reduce(gcd, arr)))
