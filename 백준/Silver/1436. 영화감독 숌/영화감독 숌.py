@@ -1,0 +1,13 @@
+# problem statement : https://www.acmicpc.net/problem/1436
+
+n = int(input())
+count = 0
+number = 666
+
+while True:
+    if '666' in str(number):
+        count += 1
+        if count == n:
+            break
+    number += 1
+print(number)
