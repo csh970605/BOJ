@@ -4,7 +4,6 @@ input = sys.stdin.readline
 
 def backtracking(n, m, cs, arr, visited):
     if len(cs) == m:
-        # print(' '.join(map(str, cs)))
         result.add(tuple(cs))
         return
     
@@ -18,7 +17,6 @@ def backtracking(n, m, cs, arr, visited):
 
 n, m = map(int, input().split())
 arr = list(map(int, input().split()))
-arr.sort()
 cs = []
 visited = [0]*(n)
 result = set()
