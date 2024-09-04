@@ -22,9 +22,8 @@ for _ in range(m):
     graph[a].append(b)
     graph[b].append(a)
 
-visited = [0] * (n)
+visited = [0] * n
 
-count = 0
 for i in range(n):
     dfs(i, 0)
 
